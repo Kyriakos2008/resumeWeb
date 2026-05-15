@@ -15,7 +15,7 @@ import mod from 'astro/zod'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.me',
+	site: 'https://kyriakos2008.github.io',
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
