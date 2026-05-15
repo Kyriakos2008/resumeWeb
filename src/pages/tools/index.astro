@@ -10,7 +10,14 @@ const DESIGN = [
 		href: 'https://www.figma.com/',
 		iconPath: 'figma',
 		iconBgColour: '#000001'
-	}
+	},
+	{
+    name: 'SolidWorks',
+    description: '3D Design',
+    href: 'https://www.solidworks.com/',
+    iconPath: 'solidworks',
+    iconBgColour: '#181717'
+  }
 ]
 
 const PRODUCTIVITY = [
@@ -51,7 +58,8 @@ const DEVELOPMENT = [
 		href: 'https://chat.openai.com/',
 		iconPath: 'chatgpt',
 		iconBgColour: '#06A67F'
-	}
+	},
+	
 ]
 ---
 
@@ -76,7 +84,7 @@ const DEVELOPMENT = [
 		<div class='mt-5 flex w-full flex-col gap-y-10'>
 			<div>
 				<h1 class='mb-1 text-2xl font-bold'>Tools</h1>
-				<p>Tools and software I use daily</p>
+				<p>Tools and software I am familiar with</p>
 			</div>
 
 			<ToolSection title='Design' tools={DESIGN} />
