@@ -13,9 +13,10 @@ import astro from '../assets/headshot.png'
 import { getAllPosts, sortMDByDate } from '@/utils'
 
 const languages = ['Greek (Mother Tongue)', 'English']
-const frontend = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
-const backend = ['lorem', 'ipsum', 'lorem', 'ipsum']
-const others = ['lorem', 'ipsum', 'lorem', 'ipsum', 'lorem']
+const software = ['Python', 'Flutter', 'Dart','C++', 'Docker', 'Linux', 'Git']
+const hardware = ['Arduino', 'CAD', '3D Printing']
+const creative = ['Blender', 'Video Editing', 'Photography']
+const other = ['Guitar']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -87,7 +88,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-				I'm a high school student based in Cyprus interested in engineering, programming,and building real-world projects. I enjoy combining software and hardware — from web apps and self-hosted systems to Arduino builds and 3D printing. I'm currently exploring full-stack development and system design while constantly building small projects to learn faster.
+				I'm a high school student based in Cyprus interested in engineering, programming, and building real-world projects. I enjoy combining software and hardware — from web apps and self-hosted systems to Arduino builds and 3D printing. I'm currently exploring full-stack development and system design while constantly building small projects to learn faster.
 			</p>
 		</Section>
 		{
@@ -126,21 +127,21 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			heading='High School Apolytirion'
 			subheading='Latsia Lyceum'
 			date='2023 - 2026'
-			imagePath='/src/assets/about-astro.png'
+			imagePath='/src/assets/likio.png'
 			altText=''
-			imageClass='h-12 w-auto md:-left-16'
+			imageClass='h-12 w-auto md:-left-16 rounded-full'
 		/>
 		<Card
 			heading='Cambridge IGCSE (English as a Second Language)'
 			subheading='Passed with A grade'
 			date='2023'
-			imagePath='/src/assets/about-astro.png'
+			imagePath='/src/assets/cambridge.png'
 			altText=''
-			imageClass='h-12 w-auto md:-left-16'
+			imageClass='h-12 w-auto md:-left-16 rounded-full'
 		/>
 	</Section>
 
-		<Section title='Experience'>
+		<!-- <Section title='Experience'>
 			<Card
 				heading='Lorem Ipsum'
 				subheading='Sit amet consectetur'
@@ -166,25 +167,25 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				altText='Lorem, ipsum dolor sit'
 				imageClass='h-12 w-auto md:-left-16'
 			/>
-		</Section>
+		</Section> -->
 
 
 		<Section title='Projects'>
 			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
 				<ProjectCard
-					href='https://www.google.com'
-					heading='Consectetur'
-					subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-					imagePath='/src/assets/coming-soon.png'
-					altText='Example'
+					href='https://github.com/Kyriakos2008/Latsify'
+					heading='Latsify'
+					subheading='Fast and user-friendly student app that centralizes grades, tests, and school information in one place.'
+					imagePath='/src/assets/latsify.png'
+					altText=''
 					class='w-full sm:w-1/2'
 				/>
 				<ProjectCard
-					as='div'
-					heading='Coming soon...'
-					subheading=''
+					href='https://github.com/Kyriakos2008/Receipt-Generator-Public'
+					heading='Receipt Generator'
+					subheading='Desktop receipt generation tool with automatic PDF creation, customer management, and silent printing support.'
 					imagePath='/src/assets/coming-soon.png'
-					altText='Lorem, ipsum dolor sit'
+					altText=''
 					class='w-full sm:w-1/2'
 				/>
 			</div>
@@ -196,28 +197,60 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 				heading='MIT Global Teaching Labs (MIT MISTI) Participant'
 				subheading='Selected to participate in the MIT Global Teaching Labs program, where MIT students teach STEM subjects internationally. Attended sessions in Nicosia, engaging in hands-on learning activities, problem-solving workshops, and collaborative engineering-focused exercises.'
 				date='January 19th - 23rd, 2026'
-				imagePath='/src/assets/about-astro.png'
+				imagePath='/src/assets/misti.png'
 				altText=''
-				imageClass='h-11 w-auto md:-left-16'
+				imageClass='h-11 w-auto md:-left-16 rounded-full'
 				
 			/>
 			<Card
 				as='a'
 				heading='EPAS Programme participant'
-				subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta.'
-				date='Mar 2029 - Mar 2032'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
-				imageClass='h-11 w-auto md:-left-16'
-				href='https://www.google.com'
+				subheading='Participated in the European Parliament Ambassador School (EPAS) programme, including selection for the Euroscola event in Strasbourg, where I visited the European Parliament and took part in EU-focused discussions and activities.'
+				date='2023 - 2024'
+				imagePath='/src/assets/epas.png'
+				altText=''
+				imageClass='h-11 w-auto md:-left-16 rounded-full'
+				
 			/>
+			<Card
+				as='a'
+				heading='Europe Direct / University of Cyprus Video Competition — 1st Place (Team)'
+				subheading='Created a video presentation as part of a student competition organized by Europe Direct Nicosia and the University of Cyprus, in collaboration with the European Commission Representation in Cyprus. Awarded 1st place (96/100) and a 3-day trip to Brussels.'
+				date='2024 - 2025'
+				imagePath='/src/assets/epas.png'
+				altText=''
+				imageClass='h-11 w-auto md:-left-16 rounded-full'
+				
+			/>
+			<Card
+				as='a'
+				heading='3rd Place – Cyprus Programming Relay Competition'
+				subheading='Competed as part of the Latsia High School team in the national Programming Relay Competition finals. Collaborated across multiple grade levels to solve a sequence of programming challenges under time constraints, placing 3rd among top schools in Cyprus.'
+				date='27 March 2026'
+				imagePath='/src/assets/uclan.png'
+				altText=''
+				imageClass='h-11 w-auto md:-left-16 rounded-full'
+				
+			/>
+			<Card
+				as='a'
+				heading='3rd Place – Pancyprian School Theatre Competition'
+				subheading='Part of the technical team for Latsia High School’s theatre production, which placed 3rd in the Nicosia district. Created the official trailer, designed and produced audiovisual content used during the performance, and assisted with live sound and lighting during the final act.'
+				date='2026'
+				imagePath='/src/assets/thoc.png'
+				altText=''
+				imageClass='h-11 w-auto md:-left-16 rounded-full'
+				
+			/>
+			
 		</Section>
 
 		<Section title='Skills'>
 			<SkillLayout title='Languages' skills={languages} />
-			<SkillLayout title='Frontend' skills={frontend} />
-			<SkillLayout title='Backend' skills={backend} />
-			<SkillLayout title='Others' skills={others} />
+			<SkillLayout title='Software Development' skills={software} />
+			<SkillLayout title='Hardware & Engineering' skills={hardware} />
+			<SkillLayout title='Creative & Media' skills={creative} />
+			<SkillLayout title='Personal / Other' skills={other} />
 		</Section>
 	</div>
 	

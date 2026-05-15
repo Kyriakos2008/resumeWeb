@@ -5,13 +5,6 @@ import Button from '@/components/Button.astro'
 
 const DESIGN = [
 	{
-		name: 'Figma',
-		description: 'Design Tool',
-		href: 'https://www.figma.com/',
-		iconPath: 'figma',
-		iconBgColour: '#000001'
-	},
-	{
     name: 'SolidWorks',
     description: '3D Design',
     href: 'https://www.solidworks.com/',
@@ -20,27 +13,34 @@ const DESIGN = [
   }
 ]
 
-const PRODUCTIVITY = [
+const media = [
 	{
-		name: 'Arc',
-		description: 'Browser',
-		href: 'https://arc.net/',
-		iconPath: 'arc',
+		name: 'DaVinci Resolve',
+		description: 'Video Editing',
+		href: 'https://www.blackmagicdesign.com/products/davinci-resolve/',
+		iconPath: 'davinci',
 		iconBgColour: '#414350'
 	},
 	{
-		name: 'Notion',
-		description: 'Note Taking',
-		href: 'https://www.notion.so/product',
-		iconPath: 'notion',
+		name: 'Adobe Lightroom',
+		description: 'Photo Editing',
+		href: 'https://www.adobe.com/products/lightroom.html',
+		iconPath: 'lightroom',
 		iconBgColour: '#EFEFEE'
 	},
 	{
-		name: 'Obsidian',
-		description: 'Long-form Writing',
-		href: 'https://obsidian.md/',
-		iconPath: 'obsidian',
-		iconBgColour: '#7A3EE8'
+		name: 'Adobe Photoshop',
+		description: 'Image Editing',
+		href: 'https://www.adobe.com/products/photoshop.html',
+		iconPath: 'photoshop',
+		iconBgColour: '#31A8FF'
+	},
+	{
+		name: 'REAPER',
+		description: 'Audio Editing',
+		href: 'https://www.reaper.fm/',
+		iconPath: 'reaper',
+		iconBgColour: '#5A5A5A'
 	}
 ]
 
@@ -53,10 +53,10 @@ const DEVELOPMENT = [
 		iconBgColour: '#2C2C32'
 	},
 	{
-		name: 'ChatGPT',
-		description: 'AI',
-		href: 'https://chat.openai.com/',
-		iconPath: 'chatgpt',
+		name: 'GitHub',
+		description: 'Version Control',
+		href: 'https://github.com/',
+		iconPath: 'github',
 		iconBgColour: '#06A67F'
 	},
 	
@@ -87,9 +87,9 @@ const DEVELOPMENT = [
 				<p>Tools and software I am familiar with</p>
 			</div>
 
-			<ToolSection title='Design' tools={DESIGN} />
-			<ToolSection title='Productivity' tools={PRODUCTIVITY} />
 			<ToolSection title='Development' tools={DEVELOPMENT} />
+			<ToolSection title='Media & Creative' tools={media} />
+			<ToolSection title='Engineering & Design' tools={DESIGN} />
 		</div>
 	</div>
 </PageLayout>
