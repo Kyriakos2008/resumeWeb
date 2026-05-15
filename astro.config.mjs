@@ -10,7 +10,7 @@ import { expressiveCodeOptions } from './src/site.config'
 import icon from 'astro-icon'
 
 export default defineConfig({
-    site: 'https://kyriakos2008.github.io',
+    site: 'https://kyriakosnikoletti.com',
     base: '/resumeWeb/',
     integrations: [
         expressiveCode(expressiveCodeOptions),
