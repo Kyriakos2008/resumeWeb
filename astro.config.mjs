@@ -16,6 +16,7 @@ import mod from 'astro/zod'
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://kyriakos2008.github.io',
+	base: '/resumeWeb/',
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		tailwind({
