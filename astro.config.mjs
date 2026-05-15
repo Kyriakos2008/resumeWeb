@@ -9,7 +9,9 @@ import expressiveCode from 'astro-expressive-code'
 import { expressiveCodeOptions } from './src/site.config'
 import icon from 'astro-icon'
 
-import vercel from '@astrojs/vercel/serverless'
+// import vercel from '@astrojs/vercel/serverless'
+import node from '@astrojs/node'
+import mod from 'astro/zod'
 
 // https://astro.build/config
 export default defineConfig({
@@ -43,7 +45,8 @@ export default defineConfig({
 	},
 	prefetch: true,
 	output: 'server',
-	adapter: vercel({
+	adapter: node({
+		mode: 'standalone',
 		webAnalytics: { enabled: true }
 	})
 })

@@ -8,7 +8,7 @@ import SkillLayout from '../components/SkillLayout.astro'
 import PostPreview from '@/components/blog/PostPreview.astro'
 
 import { Image } from 'astro:assets'
-import astro from '../assets/about-astro.png'
+import astro from '../assets/headshot.png'
 
 import { getAllPosts, sortMDByDate } from '@/utils'
 
@@ -28,7 +28,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			<Image
 				src={astro}
 				alt='profile photo'
-				class='h-28 w-auto rounded-full bg-[#FFBE98] p-2'
+				class='h-28 w-auto rounded-full bg-[#4c4c4c] p-1'
 				loading='eager'
 			/>
 
@@ -48,14 +48,14 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 					<p class='font-medium'>Get free template</p>
 				</a> -->
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-					<Label title='Latsia Lyceum'>
+					<!-- <Label title='Latsia Lyceum'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
 								d='M4.615 20q-.69 0-1.152-.462Q3 19.075 3 18.385v-9.77q0-.69.463-1.152Q3.925 7 4.615 7H9V5.615q0-.69.463-1.152Q9.925 4 10.615 4h2.77q.69 0 1.153.463q.462.462.462 1.152V7h4.385q.69 0 1.152.463q.463.462.463 1.152v9.77q0 .69-.462 1.152q-.463.463-1.153.463zm0-1h14.77q.23 0 .423-.192q.192-.193.192-.423v-9.77q0-.23-.192-.423Q19.615 8 19.385 8H4.615q-.23 0-.423.192Q4 8.385 4 8.615v9.77q0 .23.192.423q.193.192.423.192M10 7h4V5.615q0-.23-.192-.423Q13.615 5 13.385 5h-2.77q-.23 0-.423.192q-.192.193-.192.423zM4 19V8z'
 							></path></svg
 						>
-					</Label>
+					</Label> -->
 					<Label title='Nicosia, Cyprus'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
@@ -190,20 +190,20 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			</div>
 		</Section>
 
-		<Section title='Certifications'>
+		<Section title='Achievements'>
 			<Card
 				as='a'
-				heading='Lorem ipsum, dolor sit amet consectetur adipisicing.'
-				subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta magni consequuntur corrupti.'
-				date='Mar 2024 - Mar 2024'
+				heading='MIT Global Teaching Labs (MIT MISTI) Participant'
+				subheading='Selected to participate in the MIT Global Teaching Labs program, where MIT students teach STEM subjects internationally. Attended sessions in Nicosia, engaging in hands-on learning activities, problem-solving workshops, and collaborative engineering-focused exercises.'
+				date='January 19th - 23rd, 2026'
 				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
+				altText=''
 				imageClass='h-11 w-auto md:-left-16'
-				href='https://www.google.com'
+				
 			/>
 			<Card
 				as='a'
-				heading='Lorem ipsum, dolor sit amet'
+				heading='EPAS Programme participant'
 				subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dicta.'
 				date='Mar 2029 - Mar 2032'
 				imagePath='/src/assets/about-astro.png'
