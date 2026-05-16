@@ -11,7 +11,7 @@ import icon from 'astro-icon'
 
 export default defineConfig({
     site: 'https://kyriakosnikoletti.com',
-    base: '/resumeWeb/',
+    base: '/',
     integrations: [
         expressiveCode(expressiveCodeOptions),
         tailwind({
