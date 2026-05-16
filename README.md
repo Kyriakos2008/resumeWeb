@@ -29,10 +29,4 @@ Built as a fast and responsive personal hub for:
 - Organized skills and achievements sections
 
 ## Live Website
-[your domain here]
-
-## Local Development
-
-```bash
-npm install
-npm run dev
+www.kyriakosnikoletti.com
